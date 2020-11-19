@@ -803,6 +803,12 @@ body {
     position: relative;
     width: 100%;
   }
+  .settings__block {
+    margin-bottom: 40px;
+  }
+  .section__form-info {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 890px) {
   .start__page::before {
@@ -977,6 +983,9 @@ body {
   .price__table {
     width: 100%;
   }
+  .button-input {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 633px) {
   .header__nav {
@@ -1041,6 +1050,10 @@ body {
     font-size: 1.05rem;
     margin-bottom: 20px;
   }
+  .button-input {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 376px) {
   .title {
@@ -1067,7 +1080,6 @@ body {
     line-height: 1;
     font-weight: 400;
   }
-  
   .form__box {
     padding: 30px;
   }
@@ -1082,5 +1094,9 @@ body {
   }
   .form__box {
     padding: 30px 40px;
+  }
+  .form__box-input span {
+    left: 5px;
+    font-size: 12px;
   }
 }
