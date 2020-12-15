@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Test Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <!-- End -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <title>ITcom-0800</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,7 +21,8 @@
 
         <div class="header__inner">
             <div class="logo">
-                <a href="#!" class="logo__link">iTcom</a>
+                <a href="#!" class="logo__link">IT<span>com</span></a>
+                <p class="logo__text">for Bussines</p>
             </div>
             <nav class="header__nav">
                 <a class="header__nav-link" href="#!">0-800</a>
@@ -40,7 +47,7 @@
         <div class="main-container">
             <section class="start__page">
                 <div class="start__page_box-title">
-                    <span class="start-title-stic"></span>
+                    <span class="start-title-stic" id="startStic"></span>
                     <h1 class="start__page-title title">
                         Услуга <br> <span>0-800...</span>
                     </h1>
@@ -48,6 +55,7 @@
                 </div>
 
                 <div class="start__page-text-inner">
+                    <p class="start__page-text">Один лояльный номер для всей компании.</p>
                     <p class="start__page-text">Номер <span> 0-800</span> действует на всей территории Украины и
                         позволяет <span>
                             одновременно</span>
@@ -57,16 +65,17 @@
 
                     <p class="start__page-promo">от <span>75</span> грн./мес.</p>
                 </div>
-                <div class="start__page-link"><a href="#contacts">Подключить</a></div>
+                <div class="start__page-link" id="titleButton"><a href="#contacts">Подключить</a></div>
 
                 <div class="start__phone-block">
                     <div class="phone__block-img">
                         <div class="phone__block--img-disp">
                             <h4>Выбери свой <br> <span>Gold</span> номер:</h4>
                             <ul>
-                                <li>08007505050</li>
-                                <li>08007555535</li>
-                                <li>08007544445</li>
+                                <li>0800 750 111</li>
+                                <li>0800 751 555</li>
+                                <li>0800 75 7775</li>
+                                <li>0800 75 9995</li>
                             </ul>
                         </div>
                     </div>
@@ -248,7 +257,12 @@
                 </div>
                 <div class="contact__form">
                     <h2 class="contact__form-title">Ваше сообщение</h2>
-                    <form class="form__box" action="php/telegram.php" method="POST">
+                    <form class="form__box">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Site ITcom-0800">
+                        <input type="hidden" name="admin_email" value="itcorp.stu@gmail.com">
+                        <input type="hidden" name="form_subject" value="0800">
+                        <!-- END Hidden Required Fields -->
                         <div class="form__box-input w50">
                             <input type="text" name="user_name" required="required" />
                             <span>Имя</span>
@@ -279,10 +293,11 @@
     </main>
     <footer class="footer">
         <div class="footer__inner">
-            @ Template by AndriyB 2020. Все права защищены.
+            @ Template by AndrijB 2020. Все права защищены.
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
