@@ -23,20 +23,36 @@
                 <p class="logo__text">for Bussines</p>
             </div>
             <nav class="header__nav">
-                <a class="header__nav-link" href="#!">0-800</a>
-                <a class="header__nav-link link-close" href="#!">SIP</a>
-                <a class="header__nav-link link-close" href="#!">ipATC</a>
-                <a class="header__nav-link" href="#contacts">Контакты</a>
+                <ul class="header__nav-links">
+                    <li class="header__nav-link">
+                        <a href="#!">0-800</a>
+                    </li> <li class="header__nav-link link-close">
+                        <a href="#!">SIP</a>
+                    </li>
+                    <li class="header__nav-link link-close">
+                        <a href="#!">ipATC</a>
+                    </li>
+                    <li class="header__nav-link">
+                        <a href="#contacts">Контакти</a>
+                    </li>
+                    
+                </ul>
                 <div class="header__nav-close">
                     <span class="header__nav-close-line"></span>
                     <span class="header__nav-close-line"></span>
                 </div>
+                <ul class="header-language">
+                    <li class="header-languege-ua"><button id="ua" class="lang-button translate">ua</button></li>
+                    <li class="header-lang-in">/</li>
+                    <li class="header-languege-ru"><button id="ru" class=" lang-button translate">ru</button></li>
+                </ul>
             </nav>
             <div class="header__burger burger">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
             </div>
+
         </div>
         <!-- /.header__inner -->
 
@@ -45,24 +61,29 @@
         <div class="main-container">
             <section class="start__page">
                 <div class="start__page_box-title">
-                    <span class="start-title-stic" id="startStic"></span>
+                    <div class="start-title-stic" id="startStic"></div>
                     <h1 class="start__page-title title">
-                        Услуга <br> <span>0-800...</span>
+                        Телефония <br> <span class="">0-800...</span>
                     </h1>
-                    <p class="start__page-title-text ubuntu">это - лояльность к Вашим Клиентам!!!</p>
+                    <p class="start__page-title-text ubuntu lang" key="start__page-p">это - лояльность к Вашим Клиентам!!!</p>
                 </div>
 
                 <div class="start__page-text-inner">
-                    <i class="fa fa-crosshairs" aria-hidden="true"></i>
-                    <p class="start__page-text">Один лояльный номер для всей компании.</p>
-                    <p class="start__page-text">Номер <span> 0-800</span> действует на всей территории Украины и
-                        позволяет <span>
-                            одновременно</span>
-                        принимать все входящие звонки.
-                        Клиенты знают, что все вызовы для них - бесплатны.
-                    </p>
-
-                    <p class="start__page-promo">от <span>75</span> грн./мес.</p>
+                    <ul class="start__inner-ul">
+                        <li class="start__inner-list ">
+                            Единый контактный номер для всей компании;
+                            <span class="ubuntu">клиенты всегда будут помнить Ваш контактный номер</span>
+                        </li>
+                        <li class="start__inner-list">
+                            Одновременно принимайте все звонки на один номер;
+                            <span class="ubuntu">услуга Многоканальность до 300 линий и больше ...</span>
+                        </li>
+                        <li class="start__inner-list">
+                            Получай звонки от каждого клиента
+                            <span class="ubuntu">клиенты знают, что все вызовы для них - бесплатны!</span>    
+                        </li>
+                    </ul>
+                    <p class="start__page-price">от <span>75</span> грн./мес.</p>
                 </div>
                 <div class="start__page-link" id="titleButton"><a href="#contacts">Подключить</a></div>
 
