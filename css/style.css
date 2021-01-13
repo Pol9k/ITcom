@@ -217,13 +217,13 @@ button {
 }
 /* --------MAIN-- */
 body {
-  background: #ecf0f1;
+  background: #fff;
 }
 .main {
   position: relative;
   width: 100%;
   min-height: auto;
-  background: #ecf0f1;
+  background: #fff;
   padding-top: 70px;
   overflow: hidden;
 }
