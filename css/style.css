@@ -341,7 +341,7 @@ body {
   padding-left: 50px;
   color: #121212;
   background: transparent;
-  -webkit-text-stroke: 0.1vw #95a5a6;
+  -webkit-text-stroke: 0.1vw #d8d0d0;
   text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 5;
