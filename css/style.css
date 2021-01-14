@@ -372,6 +372,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.375;
   font-weight: 500;
+  letter-spacing: 1px;
   color: #000;
   margin-bottom: 1.5rem;
   position: relative;
@@ -466,12 +467,10 @@ body {
   margin-top: 18px;
   font-weight: 400;
 }
-
 /* ABOUT SERVICES */
 .about__service {
   width: 100%;
   padding: 30px 0;
-  /* margin-bottom: 20px; */
 }
 
 .about__service-content {
@@ -513,6 +512,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.375;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 .service-box-list li + li {
   margin-top: 20px;
@@ -574,6 +574,18 @@ body {
   margin-top: 30px;
   text-align: center;
 }
+.price__title-text {
+  display: block;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  width: 70%;
+  text-align: left;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  color: #111;
+}
+
 .price__table-sec table tr th {
   padding: 10px 20px;
   font-size: 1.375rem;
@@ -597,8 +609,8 @@ body {
   width: 600px;
 }
 
-/* SETTINGS */
 
+/* SETTINGS */
 .settings {
   padding: 30px 10px;
   width: 100%;
