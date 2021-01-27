@@ -25,5 +25,52 @@ for (let anchor of anchors) {
   });
 })();
 
+// Send Messag
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "../php/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+});
+
+// chenge color
+// const titleStic = document.querySelector('#startStic');
+// const titleButton = document.querySelector('#titleButton')
+
+// titleButton.forEach(popup => popup.addEventListener('click',()=> {
+//   popup.classList.toggle('active')
+// }));
+
+// Langeuge
+// const arrLang = {
+//   'ua': {
+//     'start__page-p': 'це лояльність до ваших клієнтів'
+//   },
+//   'ru': {
+//     'start__page-p': 'це лояльність до ваших клієнтів'
+//   }
+// }
+// $(function() {
+//   $('.translate').click(function() {
+//     let lang = $(this).attr('id');
+
+//     $('.lang').each(function(index, item) {
+//       $(this).text(arrLang[lang][$(this).attr('key')]);
+//     });
+//   });
+// });
 
 
